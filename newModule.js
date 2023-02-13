@@ -5,6 +5,9 @@ var crypto = require('crypto-js');
 var key = "Baba0987_&";
 
 
+function check(){
+    console.log('check')
+}
 function encryptDecrpt(){
     let encryptedData = crypto.AES.encrypt('this is my name', key).toString();
     console.log(encryptedData);
